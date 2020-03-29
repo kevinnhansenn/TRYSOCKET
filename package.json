@@ -1,0 +1,27 @@
+{
+    "name": "trySocket",
+    "version": "1.0.0",
+    "description": "My luminous Nuxt.js project",
+    "author": "Kevin Hansen",
+    "private": true,
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+        "build": "nuxt build",
+        "start": "cross-env NODE_ENV=production node server/index.js",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@nuxtjs/axios": "^5.9.6",
+        "@nuxtjs/toast": "^3.3.0",
+        "cross-env": "^5.2.0",
+        "express": "^4.16.4",
+        "mongoose": "^5.9.6",
+        "nuxt": "^2.0.0",
+        "socket.io": "^2.3.0",
+        "vue-socket.io": "^3.0.7"
+    },
+    "devDependencies": {
+        "nodemon": "^1.18.9",
+        "@nuxtjs/vuetify": "^1.0.0"
+    }
+}
