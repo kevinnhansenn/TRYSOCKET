@@ -1,7 +1,7 @@
 <template>
     <v-row justify="center">
         <v-snackbar color="error" top v-model="error" :timeout="timeout">
-            Please use other username
+            Please work
             <v-btn color="blue" text @click="error = false">Close</v-btn>
         </v-snackbar>
         <v-dialog persistent v-model="dialog" max-width="600px">
@@ -45,7 +45,7 @@ export default {
     methods: {
         ...mapMutations(["setUser"]),
         joinRoom() {
-            this.$axios.s;
+            this.$axios.setBaseURL(process.env.BaseURL);
             this.$axios
                 .$post("/user", {
                     user: this.name

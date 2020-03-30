@@ -87,5 +87,11 @@ module.exports = {
         */
         extend(config, ctx) {
         }
+    },
+    /*
+    ** Environment configuration
+    */
+    env: {
+        BaseURL: process.env.BaseURL || 'http://127.0.0.1:3000'
     }
 }
