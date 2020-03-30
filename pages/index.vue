@@ -7,7 +7,7 @@
         <v-dialog persistent v-model="dialog" max-width="600px">
             <v-card>
                 <v-card-title>
-                    <span class="headline">PRIVATE CHAT ROOM (SOCKET.IO)</span>
+                    <span class="headline">PRIVATE CHAT ROOM</span>
                 </v-card-title>
                 <v-card-text>
                     <v-container>

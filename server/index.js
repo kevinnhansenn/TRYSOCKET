@@ -1,6 +1,5 @@
 const { app, express, server } = require('./socket/chat')
 const db = require('./database/db')
-const User = require('./models/user')
 const userRouter = require('./routers/user')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
