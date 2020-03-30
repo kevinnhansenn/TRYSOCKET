@@ -89,6 +89,6 @@ module.exports = {
         }
     },
     axios: {
-        // baseURL: 'https://try-socket-hansen.herokuapp.com/'
+        baseURL: 'https://try-socket-hansen.herokuapp.com/'
     }
 }
