@@ -56,7 +56,7 @@ export default {
                 })
                 .catch(e => {
                     // this.error = true;
-                    this.$toast.error("Please Use other username");
+                    this.$toast.error(e);
                 });
         }
     }

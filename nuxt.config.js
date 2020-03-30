@@ -89,6 +89,10 @@ module.exports = {
         }
     },
     axios: {
-        baseURL: 'https://try-socket-hansen.herokuapp.com/'
+        baseURL: 'https://try-socket-hansen.herokuapp.com'
+        // baseURL: 'http://172.20.10.3:3000'
+    },
+    server: {
+        host: '0.0.0.0'
     }
 }
