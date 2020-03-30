@@ -73,7 +73,6 @@ export default {
             }
         },
         exit() {
-            this.$axios.setBaseURL(process.env.BaseURL);
             this.$axios
                 .$post("/disconnect", {
                     user: this.user

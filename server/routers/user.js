@@ -18,6 +18,7 @@ router.post('/disconnect', async (req, res) => {
         await User.findOneAndDelete({ user })
         res.status(200).send()
     } catch (err) {
+
         res.status(500).send()
     }
 })

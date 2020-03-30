@@ -45,7 +45,6 @@ export default {
     methods: {
         ...mapMutations(["setUser"]),
         joinRoom() {
-            this.$axios.setBaseURL(process.env.BaseURL);
             this.$axios
                 .$post("/user", {
                     user: this.name
