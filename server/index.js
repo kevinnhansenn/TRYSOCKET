@@ -5,12 +5,7 @@ const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 
 
-db.on('error', function () {
-    console.log("Connection Error")
-})
 
-app.use(express.json())
-app.use(userRouter)
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
@@ -40,3 +35,7 @@ async function start() {
     })
 }
 start()
+
+// Express
+app.use(express.json())
+app.use(userRouter)
