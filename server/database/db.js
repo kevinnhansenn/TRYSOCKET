@@ -6,7 +6,3 @@ mongoose.connect(MONGODB_URL, {
     useUnifiedTopology: true,
     useFindAndModify: false
 })
-
-const db = mongoose.connection
-
-module.exports = db
